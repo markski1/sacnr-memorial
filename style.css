@@ -1,0 +1,33 @@
+body {
+	background-color: #1A2022;
+	color: white;
+	font-family: tahoma;
+}
+
+.container {
+	width:  1000px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.notice-thing {
+	background-color: #AC6C6C;
+	color:  black;
+	padding: 15px;
+	border-radius: 5px;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+a {
+	color: #4FA6AC;
+}
+
+.navLink {
+	color: #8F9CAB;
+}
