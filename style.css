@@ -31,3 +31,7 @@ a {
 .navLink {
 	color: #8F9CAB;
 }
+
+span.active {
+	color:  #B98CFA;
+}
