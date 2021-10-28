@@ -5,7 +5,8 @@ body {
 }
 
 .container {
-	width:  1000px;
+	width: 99%;
+	max-width:  1000px;
 	margin-top: 20px;
 	margin-right: auto;
 	margin-left: auto;
@@ -34,4 +35,9 @@ a {
 
 span.active {
 	color:  #B98CFA;
+}
+
+#logo {
+	width: 69%;
+	max-width: 400px;
 }
