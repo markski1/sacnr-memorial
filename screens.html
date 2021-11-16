@@ -5,12 +5,27 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>SACNR - Memorial page</title>
 </head>
-<body>
+<body onload="RequestImages()">
 	<div class="container">
 		<a href="index.html"><img src="assets/logo.png" id="logo"></a>
 		<h3>Screenshots</h3>
+		<p>In no particular order, in-game screenshots of the server.</p>
 		<hr>
-		TODO
+		<div id="images">
+
+		</div>
 	</div>
 </body>
 </html>
+
+<script type="text/javascript">
+	let biggestScreenNumber = 1;
+	let htmlWithSreens = '<br>';
+	function RequestImages() {
+		for (var i = 0; i <= biggestScreenNumber; i++) {
+			htmlWithSreens += '<img src="./assets/screens/scr' + i + '.png">';
+		}
+		alert(htmlWithSreens);
+		document.getElementById("images").innerHTML = htmlWithSreens;
+	}
+</script>
