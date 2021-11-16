@@ -10,22 +10,31 @@
 		<a href="index.html"><img src="assets/logo.png" id="logo"></a>
 		<h3>Screenshots</h3>
 		<p>In no particular order, in-game screenshots of the server.</p>
+		<p>Contact us on Discord if you'd like your screenshot added.</p>
 		<hr>
 		<div id="images">
-
+			<p>Loading!</p>
 		</div>
 	</div>
 </body>
 </html>
 
+<style type="text/css">
+	img {
+		max-width: 99%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+</style>
+
 <script type="text/javascript">
-	let biggestScreenNumber = 1;
+	let biggestScreenNumber = 42;
 	let htmlWithSreens = '<br>';
 	function RequestImages() {
 		for (var i = 0; i <= biggestScreenNumber; i++) {
-			htmlWithSreens += '<img src="./assets/screens/scr' + i + '.png">';
+			htmlWithSreens += '<a href="./assets/screens/' + i + '.png"><img src="./assets/screens/' + i + '.png"></a><br>';
 		}
-		alert(htmlWithSreens);
 		document.getElementById("images").innerHTML = htmlWithSreens;
 	}
 </script>
