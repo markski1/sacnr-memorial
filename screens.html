@@ -13,7 +13,7 @@
 		<p>Contact us on Discord if you'd like your screenshot added.</p>
 		<hr>
 		<div id="images">
-			<p>Loading!</p>
+			<p>Loading. If you can read this far and nothing happens, you must enable JavaScript.</p>
 		</div>
 	</div>
 </body>
@@ -30,11 +30,11 @@
 
 <script type="text/javascript">
 	let biggestScreenNumber = 42;
-	let htmlWithSreens = '<br>';
+	let htmlWithScreens = '';
 	function RequestImages() {
 		for (var i = 0; i <= biggestScreenNumber; i++) {
-			htmlWithSreens += '<a href="./assets/screens/' + i + '.png"><img src="./assets/screens/' + i + '.png"></a><br>';
+			htmlWithScreens += '<a href="./assets/screens/' + i + '.png"><img src="./assets/screens/' + i + '.png"></a><br>';
 		}
-		document.getElementById("images").innerHTML = htmlWithSreens;
+		document.getElementById("images").innerHTML = htmlWithScreens;
 	}
 </script>
